@@ -496,7 +496,6 @@
       height: 40px;
       animation: spin 0.8s linear infinite;
     }
-
     /* --- Watermark styles --- */
     .watermark {
       position: fixed;
@@ -515,7 +514,6 @@
       letter-spacing: 0.2px;
       mix-blend-mode: normal;
     }
-
     /* Modal (creator popup) styles */
     .creator-modal {
       display: none;              /* shown on load via JS */
@@ -586,7 +584,6 @@
       <a href="#demo" class="btn btn-primary">Try Demo</a>
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -598,7 +595,6 @@
       </div>
     </div>
   </section>
-
   <!-- Features Section -->
   <section id="features" class="section">
     <h2 class="section-title">Everything You Need to Delight Customers</h2>
@@ -642,7 +638,6 @@
       </div>
     </div>
   </section>
-
   <!-- Demo Section -->
   <section id="demo" class="demo-section">
     <div class="demo-container">
@@ -704,7 +699,6 @@
       </div>
     </div>
   </section>
-
   <!-- Stats Section -->
   <section class="stats-section">
     <div class="stats-grid">
@@ -726,7 +720,6 @@
       </div>
     </div>
   </section>
-
   <!-- Pricing Section -->
   <section id="pricing" class="section">
     <h2 class="section-title">Simple, Transparent Pricing</h2>
@@ -778,7 +771,6 @@
       </div>
     </div>
   </section>
-
   <!-- Footer -->
   <footer id="contact">
     <div class="footer-content">
@@ -801,12 +793,10 @@
       </p>
     </div>
   </footer>
-
   <!-- Watermark (small, non-interactive) -->
   <div class="watermark" aria-hidden="true">
     Created by Arnab Patra — Student, IEM Kolkata
   </div>
-
   <!-- Creator Modal (shown on open; closes only when user clicks the X) -->
   <div id="creatorModal" class="creator-modal" role="dialog" aria-modal="true" aria-labelledby="creatorTitle" aria-describedby="creatorDesc">
     <div class="creator-content" role="document">
@@ -816,7 +806,6 @@
       <div class="creator-ack small">Welcome — please close this message to continue.</div>
     </div>
   </div>
-
   <script>
     // Star rating interaction
     const stars = document.querySelectorAll('.star');
@@ -862,12 +851,10 @@
         }
       });
     });
-
     // Creator modal behavior:
     (function() {
       const modal = document.getElementById('creatorModal');
       const closeBtn = document.getElementById('creatorClose');
-
       // Show modal on load
       document.addEventListener('DOMContentLoaded', () => {
         // display modal (flex center)
@@ -875,12 +862,10 @@
         // focus the close button for accessibility
         closeBtn.focus();
       });
-
       // Only close when user clicks the X (closeBtn).
       closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
       });
-
       // Prevent closing by clicking overlay: do nothing on overlay click
       modal.addEventListener('click', (e) => {
         // If user clicks directly on modal background (the modal element),
@@ -889,7 +874,6 @@
           e.stopPropagation();
         }
       });
-
       // Prevent closing with Escape key — intentionally require pressing the X.
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'flex') {
@@ -901,4 +885,4 @@
     })();
   </script>
 </body>
-</html>
+</html> remove pricinadd something new and also this project created modify everty  desing and all
